@@ -1,0 +1,20 @@
+title: Saivarun Jamalpoor's Portfolio
+description: MTech student focusing on computer vision and object tracking
+url: "https://saijamalpoor.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
