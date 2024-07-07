@@ -60,3 +60,46 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Active page highlight */
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Mobile menu styles */
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Fade-in animation */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+body.fade-in {
+    opacity: 1;
+}
