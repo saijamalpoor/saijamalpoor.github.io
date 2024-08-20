@@ -27,7 +27,7 @@
         }
         main {
             display: flex;
-            flex-direction: column; /* Adjusted to stack sections vertically */
+            flex-direction: column;
             padding: 2rem;
         }
         .profile-image {
@@ -59,9 +59,13 @@
         .contact-info a {
             color: #1e90ff;
             text-decoration: none;
+            margin: 0 0.5rem; /* Add horizontal spacing between links */
         }
         .contact-info a:hover {
             text-decoration: underline;
+        }
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -69,68 +73,73 @@
     <header>
         <div>Sai Varun Jamalpoor</div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="#projects">Projects</a>
+            <a href="#home" title="Go to Home Section">Home</a>
+            <a href="#blog" title="Read the Blog Section">Blog</a>
+            <a href="#about" title="Learn More About Me">About</a>
+            <a href="#contact" title="Get in Touch">Contact</a>
+            <a href="#projects" title="View Projects">Projects</a>
         </nav>
     </header>
     <main>
-        <img src="assets/images/profilephoto.jpeg" alt="Sai Varun Jamalpoor" class="profile-image">
-        <div class="content">
-            <h1>Sai Varun Jamalpoor</h1>
-            <p>Currently pursuing a Master of Technology (M.Tech) at the Indian Institute of Space Science and Technology.</p>
-            <p>Currently working on Generative AI application development with hands-on experience in deep learning, Natural Language Processing (NLP), and computer vision. Proficient in Python, C++, and SQL, I am passionate about turning complex data into innovative solutions and contributing to cutting-edge projects.</p>
-
-            <div class="blog">
-                <h2>Blog</h2>
-                <div class="blog-post">
-                    <h3>Understanding Generative AI</h3>
-                    <p>Generative AI is transforming industries by creating new content and solutions from existing data. This blog post explores how generative models work, their applications, and future trends.</p>
-                </div>
-                <div class="blog-post">
-                    <h3>Deep Learning Techniques for NLP</h3>
-                    <p>Deep learning has revolutionized Natural Language Processing. In this post, we dive into various techniques used in NLP, including transformers and sequence-to-sequence models.</p>
-                </div>
+        <section id="home">
+            <img src="assets/images/profilephoto.jpeg" alt="Sai Varun Jamalpoor" class="profile-image">
+            <div class="content">
+                <h1>Sai Varun Jamalpoor</h1>
+                <p>Currently pursuing a Master of Technology (M.Tech) at the Indian Institute of Space Science and Technology.</p>
+                <p>Currently working on Generative AI application development with hands-on experience in deep learning, Natural Language Processing (NLP), and computer vision. Proficient in Python, C++, and SQL, I am passionate about turning complex data into innovative solutions and contributing to cutting-edge projects.</p>
             </div>
+        </section>
 
-            <div class="about">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <p>I am a passionate technologist with a focus on machine learning and AI. My journey began with a fascination for data and its potential to solve real-world problems. With a strong foundation in computer science and a drive for continuous learning, I am always exploring new advancements in the tech world.</p>
-                    <p>In addition to my academic pursuits, I enjoy contributing to open-source projects and sharing my knowledge through blogging and speaking engagements. My goal is to leverage technology to make a positive impact and drive innovation.</p>
-                </div>
+        <section id="blog">
+            <h2>Blog's</h2>
+            <div class="blog-post">
+                <h3>I will update soon</h3>
+                <p></p>
             </div>
+            <div class="blog-post">
+                <h3> </h3>
+                <p> </p>
+            </div>
+        </section>
 
-            <div class="contact">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <p>Contact me at: 
-                        <a href="mailto:saivarunjamalpoor@gmail.com">saivarunjamalpoor@gmail.com</a> $|$ 
-                        <a href="https://www.linkedin.com/in/sai-varun-jamalpur-1020b1285/">LinkedIn</a> $|$ 
-                        <a href="https://github.com/saijamalpoor">GitHub</a> $|$ 
-                        <a href="https://saijamalpoor.github.io/">Portfolio</a>
-                    </p>
-                </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I am a passionate technologist with a focus on machine learning and AI. My journey began with a fascination for data and its potential to solve real-world problems. With a strong foundation in computer science and a drive for continuous learning, I am always exploring new advancements in the tech world.</p>
+                <p>In addition to my academic pursuits, I enjoy contributing to open-source projects and sharing my knowledge through blogging and speaking engagements. My goal is to leverage technology to make a positive impact and drive innovation.</p>
             </div>
+        </section>
 
-            <div class="projects" id="projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Semantic Search Engine</h3>
-                    <p>Built a semantic search engine using state-of-the-art vector space models. Implemented a workflow for accessing and retrieving relevant information from text based on user queries. Incorporated context-based indexing techniques to enhance search result accuracy and relevance.</p>
-                </div>
-                <div class="project">
-                    <h3>Movie Genre Classification</h3>
-                    <p>Designed and developed a genre classification system utilizing textual reviews from movies. Implemented Recurrent Neural Networks (RNNs) to accurately predict movie genres based on review text.</p>
-                </div>
-                <div class="project">
-                    <h3>Blood Cell Recognition</h3>
-                    <p>Developed a machine learning model for the automatic identification and counting of blood cells using neural networks. Utilized Convolutional Neural Networks (CNNs) for effective feature extraction from microscopic images, capturing intricate details of blood cell morphology.</p>
-                </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Contact me at: 
+                    <a href="mailto:saivarunjamalpoor@gmail.com">saivarunjamalpoor@gmail.com</a> 
+                    | 
+                    <a href="https://www.linkedin.com/in/sai-varun-jamalpur-1020b1285/">LinkedIn</a> 
+                    | 
+                    <a href="https://github.com/saijamalpoor">GitHub</a> 
+                    | 
+                    <a href="https://saijamalpoor.github.io/">Portfolio</a>
+                </p>
             </div>
-        </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Semantic Search Engine</h3>
+                <p>Built a semantic search engine using state-of-the-art vector space models. Implemented a workflow for accessing and retrieving relevant information from text based on user queries. Incorporated context-based indexing techniques to enhance search result accuracy and relevance.</p>
+            </div>
+            <div class="project">
+                <h3>Movie Genre Classification</h3>
+                <p>Designed and developed a genre classification system utilizing textual reviews from movies. Implemented Recurrent Neural Networks (RNNs) to accurately predict movie genres based on review text.</p>
+            </div>
+            <div class="project">
+                <h3>Blood Cell Recognition</h3>
+                <p>Developed a machine learning model for the automatic identification and counting of blood cells using neural networks. Utilized Convolutional Neural Networks (CNNs) for effective feature extraction from microscopic images, capturing intricate details of blood cell morphology.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
