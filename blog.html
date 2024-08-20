@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saivarun Jamalpoor - Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css"> <!-- Ensure the path is correct -->
 </head>
 <body>
     <header>
-    <div class="menu-toggle">&#9776;</div>
-    <div>saivarun's blog</div>
-    <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/blog.html' | relative_url }}">Blog</a>
-        <a href="{{ '/about.html' | relative_url }}">About</a>
-        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
-        <a href="{{ '#projects' | relative_url }}">Projects</a>
-    </nav>
-</header>
+        <div class="menu-toggle">&#9776;</div>
+        <div class="site-title">Saivarun's Blog</div> <!-- Added class for styling -->
+        <nav>
+            <a href="/">Home</a> <!-- Updated to standard links -->
+            <a href="/blog.html">Blog</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
     <main>
         <h1>Blog Posts</h1>
         <ul class="post-list">
@@ -27,11 +27,13 @@
                 <p class="post-meta">{{ post.date | date_to_string }}</p>
                 <p>{{ post.excerpt }}</p>
             </li>
+            {% else %}
+            <li><p>No posts available.</p></li> <!-- Handle empty posts case -->
             {% endfor %}
         </ul>
     </main>
     <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} Saivarun Jamalpoor. All rights reserved.</p>
+        <p>&copy; {{ site.time | date: '%Y' }} Saivarun Jamalpoor. All rights reserved.</p>
     </footer>
 </body>
 </html>
