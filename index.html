@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saivarun Jamalpoor's Blog</title>
+    <title>Sai Varun Jamalpoor's Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@
             justify-content: space-between;
             align-items: center;
         }
-        nav a {
+        header a {
             color: #ffffff;
             text-decoration: none;
             margin-left: 1rem;
@@ -34,6 +34,7 @@
             height: 300px;
             object-fit: cover;
             margin-right: 2rem;
+            border-radius: 50%;
         }
         .content {
             flex: 1;
@@ -50,11 +51,22 @@
             margin-bottom: 1rem;
             border-radius: 5px;
         }
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+        .contact-info a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div>saivarun's blog</div>
+        <div>Sai Varun Jamalpoor</div>
         <nav>
             <a href="index.html">Home</a>
             <a href="blog.html">Blog</a>
@@ -64,20 +76,32 @@
         </nav>
     </header>
     <main>
-        <img src="assets/images/profilephoto.jpeg" alt="Saivarun Jamalpoor" class="profile-image">
+        <img src="assets/images/profilephoto.jpeg" alt="Sai Varun Jamalpoor" class="profile-image">
         <div class="content">
-            <h1>Saivarun Jamalpoor</h1>
-            <p>Currently pursuing MTech at Indian Institute of Space Science and Technology.</p>
-            <p>Im currently Working on GenAI appication development. </p>
+            <h1>Sai Varun Jamalpoor</h1>
+            <p>Currently pursuing a Master of Technology (M.Tech) at the Indian Institute of Space Science and Technology.</p>
+            <p>Currently working on Generative AI application development with hands-on experience in deep learning, Natural Language Processing (NLP), and computer vision. Proficient in Python, C++, and SQL, I am passionate about turning complex data into innovative solutions and contributing to cutting-edge projects.</p>
+            <div class="contact-info">
+                <p>Contact me at: 
+                    <a href="mailto:saivarunjamalpoor@gmail.com">saivarunjamalpoor@gmail.com</a> $|$ 
+                    <a href="https://www.linkedin.com/in/sai-varun-jamalpur-1020b1285/">LinkedIn</a> $|$ 
+                    <a href="https://github.com/saijamalpoor">GitHub</a> $|$ 
+                    <a href="https://saijamalpoor.github.io/">Portfolio</a>
+                </p>
+            </div>
             <div class="projects" id="projects">
                 <h2>Projects</h2>
                 <div class="project">
                     <h3>Semantic Search Engine</h3>
-                    <p> </p>
+                    <p>Built a semantic search engine using state-of-the-art vector space models. Implemented a workflow for accessing and retrieving relevant information from text based on user queries. Incorporated context-based indexing techniques to enhance search result accuracy and relevance.</p>
                 </div>
                 <div class="project">
-                    <h3>Blood Cell Classificaton</h3>
-                    <p></p>
+                    <h3>Movie Genre Classification</h3>
+                    <p>Designed and developed a genre classification system utilizing textual reviews from movies. Implemented Recurrent Neural Networks (RNNs) to accurately predict movie genres based on review text.</p>
+                </div>
+                <div class="project">
+                    <h3>Blood Cell Recognition</h3>
+                    <p>Developed a machine learning model for the automatic identification and counting of blood cells using neural networks. Utilized Convolutional Neural Networks (CNNs) for effective feature extraction from microscopic images, capturing intricate details of blood cell morphology.</p>
                 </div>
             </div>
         </div>
